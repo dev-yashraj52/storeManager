@@ -1,17 +1,62 @@
-# storemanager
+# Store Manager App
 
-Store Managament Application
+A Flutter-based inventory management application designed for small businesses and retail stores.
+The app helps manage products, stock, and sales in a simple and efficient way.
 
-## Getting Started
+## 🚀 Features
 
-This project is a starting point for a Flutter application.
+* Product inventory management
+* Sales tracking
+* Simple dashboard interface
+* Batch-based stock handling
+* Clean and minimal UI
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠 Built With
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+* Flutter
+* Dart
+* Material UI
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📂 Project Structure
+
+storeManager/
+├ android/
+├ lib/
+│  ├ main.dart
+│  ├ home_screen.dart
+│  └ sales_screen.dart
+├ test/
+├ pubspec.yaml
+├ pubspec.lock
+└ README.md
+
+## ⚙️ Installation
+
+Clone the repository
+
+git clone https://github.com/dev-yashraj52/store-management-app.git
+
+Go into the project directory
+
+cd store-management-app
+
+Install dependencies
+
+flutter pub get
+
+Run the app
+
+flutter run
+
+## 📌 Future Improvements
+
+* User roles (Admin / Staff / Super Admin)
+* Barcode scanning
+* Expiry tracking
+* Sales analytics
+* Cloud database integration
+
+## 👨‍💻 Author
+
+Yashraj
+GitHub: https://github.com/dev-yashraj52
