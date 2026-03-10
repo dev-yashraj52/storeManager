@@ -72,7 +72,7 @@ Widget dashboardCard(
   );
 }
 
-Widget salesTiles(
+Widget dashboardTiles(
     final String title,
     final IconData icon,
     final Color backgroundColor,
@@ -269,14 +269,14 @@ class HomeScreen extends StatelessWidget {
                           //small rectangle cards beneath large cards in dashboard
                           Row(
                             children: [
-                              salesTiles(
+                              dashboardTiles(
                                 "Add Product",
                                 Icons.add,
                                 Colors.blue[50]!,
                                 Colors.blue[700]!,
                               ),
                               SizedBox(width: 7,),
-                              salesTiles(
+                              dashboardTiles(
                                 "Inventory",
                                 Icons.shopping_cart,
                                 Colors.green[50]!,
@@ -288,14 +288,14 @@ class HomeScreen extends StatelessWidget {
                           //small cards second row
                           Row(
                             children: [
-                              salesTiles(
+                              dashboardTiles(
                                 "Sales",
                                 Icons.currency_rupee,
                                 Colors.orange[50]!,
                                 Colors.amber[700]!,
                               ),
                               SizedBox(width: 7,),
-                              salesTiles(
+                              dashboardTiles(
                                 "Customers",
                                 Icons.people,
                                 Colors.purple[50]!,
@@ -307,14 +307,14 @@ class HomeScreen extends StatelessWidget {
                           //small cards third row
                           Row(
                             children: [
-                              salesTiles(
+                              dashboardTiles(
                                 "Reports",
                                 Icons.article,
                                 Colors.blue[50]!,
                                 Colors.blue[700]!,
                               ),
                               SizedBox(width: 7,),
-                              salesTiles(
+                              dashboardTiles(
                                 "Settings",
                                 Icons.settings,
                                 Colors.grey[100]!,
