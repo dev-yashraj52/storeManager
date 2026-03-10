@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:storemanager/Widgets/salesInventoryListTiles.dart';
 
 Widget dashboardCard(
     final String title,
@@ -131,14 +132,7 @@ Widget dashboardTiles(
   );
 }
 
-Widget salesInventoryListTiles(final IconData icon, final String idText, final String dateTimeText, final amountText){
-  return ListTile(
-    leading: Icon(icon),
-    title: Text(idText),
-    subtitle: Text(dateTimeText),
-    trailing: Text(amountText,style: TextStyle(fontSize: 15),),
-  );
-}
+
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
