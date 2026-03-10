@@ -131,7 +131,7 @@ Widget dashboardTiles(
   );
 }
 
-Widget activityLogList(final IconData icon, final String idText, final String dateTimeText, final amountText){
+Widget salesInventoryListTiles(final IconData icon, final String idText, final String dateTimeText, final amountText){
   return ListTile(
     leading: Icon(icon),
     title: Text(idText),
@@ -355,10 +355,10 @@ class HomeScreen extends StatelessWidget {
                                 color: Colors.white,
                                 child: Column(
                                   children: [
-                                    activityLogList(Icons.receipt, '#1024', '04:15 PM Today', '₹120'),
-                                    activityLogList(Icons.receipt, '#1023', '03:10 PM Today', '₹480'),
-                                    activityLogList(Icons.receipt, '#1022', '02:50 PM Yesterday', '₹170'),
-                                    activityLogList(Icons.receipt, '#1021', '02:40 PM Yesterday', '₹515'),
+                                    salesInventoryListTiles(Icons.receipt, '#1024', '04:15 PM Today', '₹120'),
+                                    salesInventoryListTiles(Icons.receipt, '#1023', '03:10 PM Today', '₹480'),
+                                    salesInventoryListTiles(Icons.receipt, '#1022', '02:50 PM Yesterday', '₹170'),
+                                    salesInventoryListTiles(Icons.receipt, '#1021', '02:40 PM Yesterday', '₹515'),
                                   ],
                                 ),
                               )
