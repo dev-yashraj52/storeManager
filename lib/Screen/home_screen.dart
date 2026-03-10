@@ -138,28 +138,6 @@ Widget activityLogList(final IconData icon, final String idText, final String da
     subtitle: Text(dateTimeText),
     trailing: Text(amountText,style: TextStyle(fontSize: 15),),
   );
-    //Card(
-    //   child: SizedBox(
-    //     height: 65,
-    //     child: Row(
-    //       crossAxisAlignment: CrossAxisAlignment.center,
-    //       children: [
-    //         Padding(
-    //           padding: const EdgeInsets.all(15),
-    //           child: Icon(Icons.receipt,size: 22,color: Colors.grey[600],),
-    //         ),
-    //         Column(
-    //           mainAxisAlignment: MainAxisAlignment.center,
-    //           crossAxisAlignment: CrossAxisAlignment.start,
-    //           children: [
-    //             Text('#1022',style: TextStyle(fontSize: 16),),
-    //             Text('1:30PM Yesterday',style: TextStyle(fontSize: 12),),
-    //           ],
-    //         ),
-    //       ],
-    //     ),
-    //   ),
-    // ),
 }
 
 class HomeScreen extends StatelessWidget {
