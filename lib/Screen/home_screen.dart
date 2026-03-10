@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:storemanager/Widgets/salesInventoryListTiles.dart';
-import 'package:storemanager/Widgets/dashboardCard.dart';
-import 'package:storemanager/Widgets/dashboardTiles.dart';
+import 'package:storemanager/Widgets/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
