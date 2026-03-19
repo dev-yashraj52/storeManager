@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:storemanager/Widgets/widgets.dart';
 
 class SalesScreen extends StatelessWidget {
   const SalesScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text('Sales Screen'));
+    return SafeArea(
+      child: Container(
+        padding: EdgeInsets.only(top: 12, left: 12, right: 12),
+        child: searchWidget('Search Recent Sales...'),
+      ),
+
+    );
   }
 }

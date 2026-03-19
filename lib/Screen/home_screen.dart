@@ -8,7 +8,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Container(
-          padding: EdgeInsets.only(top: 5, left: 12,),
+          padding: EdgeInsets.only(top: 5, left: 12, right: 12),
           child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -51,7 +51,7 @@ class HomeScreen extends StatelessWidget {
                 Expanded(
                   child: SingleChildScrollView(
                     child: Container(
-                      padding: EdgeInsets.only(right: 12,),
+                      padding: EdgeInsets.only(right: 0,),
                       child:
                       Column(
                         mainAxisAlignment: MainAxisAlignment.start,
