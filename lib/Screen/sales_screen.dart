@@ -13,19 +13,24 @@ class SalesScreen extends StatelessWidget {
 
           children: [
             searchWidget('Search Recent Sales...'),
-            Spacer(),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                FloatingActionButton(
-                    backgroundColor: Colors.blue[700],
-                    foregroundColor: Colors.blue[50],
-                    child: Icon(Icons.add,),
-                    onPressed: (){})
-              ],
-            ),
+            SizedBox(height: 20,),
+                Card(
+                  color: Colors.white,
+                  child: SingleChildScrollView(
+                      child: Column(
+                        children: [
+                          salesInventoryListTiles(Icons.receipt, '#1024', '04:15 PM Today', '₹120'),
+                          salesInventoryListTiles(Icons.receipt, '#1023', '03:10 PM Today', '₹480'),
+                          salesInventoryListTiles(Icons.receipt, '#1022', '02:50 PM Yesterday', '₹170'),
+                          salesInventoryListTiles(Icons.receipt, '#1021', '02:40 PM Yesterday', '₹515'),
+                          salesInventoryListTiles(Icons.receipt, '#1024', '04:15 PM Today', '₹120'),
+                          salesInventoryListTiles(Icons.receipt, '#1023', '03:10 PM Today', '₹480'),
+                          salesInventoryListTiles(Icons.receipt, '#1022', '02:50 PM Yesterday', '₹170'),
+                        ],
+                      )
 
-            SizedBox(height: 12,)
+                  ),
+                ),
           ],
         ),
 

@@ -24,6 +24,25 @@ class _HomeState extends State<Home> {
     Center(child: Text('Settings Screen')),
   ];
 
+  Widget? buildFAB() {
+    if (currentPage == 1) {
+      return FloatingActionButton(
+        backgroundColor: Colors.green,
+        child: Icon(Icons.inventory_2),
+        onPressed: () {},
+      );
+    }
+    else if (currentPage == 2) {
+      return FloatingActionButton(
+        backgroundColor: Colors.blue,
+        child: Icon(Icons.add),
+        onPressed: () {},
+      );
+    }
+
+    return null;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,6 +50,8 @@ class _HomeState extends State<Home> {
         index: currentPage,
         children: pages,
       ),
+
+      floatingActionButton: buildFAB(),
 
       //Bottom NavBar
       bottomNavigationBar: Theme(
