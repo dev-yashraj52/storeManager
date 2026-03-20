@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:storemanager/Widgets/widgets.dart';
+import 'package:storemanager/Data/user_data.dart';
+
+final sales = UserData.sales;
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -202,12 +205,9 @@ class HomeScreen extends StatelessWidget {
                               Card(
                                 color: Colors.white,
                                 child: Column(
-                                  children: [
-                                    salesInventoryListTiles(Icons.receipt, '#1024', '04:15 PM Today', '₹120'),
-                                    salesInventoryListTiles(Icons.receipt, '#1023', '03:10 PM Today', '₹480'),
-                                    salesInventoryListTiles(Icons.receipt, '#1022', '02:50 PM Yesterday', '₹170'),
-                                    salesInventoryListTiles(Icons.receipt, '#1021', '02:40 PM Yesterday', '₹515'),
-                                  ],
+                                  children: UserData.sales.map((sale){
+                                    return salesInventoryListTiles(Icons.receipt, sale.id, sale.time, '₹${sale.amount}');
+                                  }).toList()
                                 ),
                               )
 

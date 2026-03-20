@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:storemanager/Widgets/widgets.dart';
+import 'package:storemanager/Data/user_data.dart';
 
 class SalesScreen extends StatelessWidget {
   const SalesScreen({super.key});
