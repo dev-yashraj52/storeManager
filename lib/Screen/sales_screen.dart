@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:storemanager/Widgets/widgets.dart';
 
 class SalesScreen extends StatelessWidget {
@@ -10,7 +9,26 @@ class SalesScreen extends StatelessWidget {
     return SafeArea(
       child: Container(
         padding: EdgeInsets.only(top: 12, left: 12, right: 12),
-        child: searchWidget('Search Recent Sales...'),
+        child:  Column(
+
+          children: [
+            searchWidget('Search Recent Sales...'),
+            Spacer(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                FloatingActionButton(
+                    backgroundColor: Colors.blue[700],
+                    foregroundColor: Colors.blue[50],
+                    child: Icon(Icons.add,),
+                    onPressed: (){})
+              ],
+            ),
+
+            SizedBox(height: 12,)
+          ],
+        ),
+
       ),
 
     );
