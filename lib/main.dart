@@ -27,15 +27,17 @@ class _HomeState extends State<Home> {
   Widget? buildFAB() {
     if (currentPage == 1) {
       return FloatingActionButton(
-        backgroundColor: Colors.green,
-        child: Icon(Icons.inventory_2),
+        backgroundColor: Colors.green[600],
+        foregroundColor: Colors.white,
+        child: Icon(Icons.add_business),
         onPressed: () {},
       );
     }
     else if (currentPage == 2) {
       return FloatingActionButton(
-        backgroundColor: Colors.blue,
-        child: Icon(Icons.add),
+        backgroundColor: Colors.blue[700],
+        foregroundColor: Colors.white,
+        child: Icon(Icons.sell),
         onPressed: () {},
       );
     }
