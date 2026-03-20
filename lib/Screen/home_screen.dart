@@ -73,7 +73,7 @@ class HomeScreen extends StatelessWidget {
                             children: [
                               dashboardCard(
                               "Today's Sale",
-                              "₹6900",
+                              "₹${UserData.totalSales}",
                               Icons.bar_chart,
                               Colors.white,
                               Colors.green[600]!,
@@ -83,7 +83,7 @@ class HomeScreen extends StatelessWidget {
                               SizedBox(width: 7,),
                               dashboardCard(
                                   "Orders",
-                                  "45",
+                                  '${UserData.totalOrders}',
                                   Icons.receipt_long,
                                   Colors.white,
                                   Colors.black,
@@ -97,7 +97,7 @@ class HomeScreen extends StatelessWidget {
                             children: [
                               dashboardCard(
                               "Stock Products",
-                              "120",
+                              '${UserData.totalProducts}',
                               Icons.inventory_2_rounded,
                               Colors.white,
                               Colors.black,
@@ -107,7 +107,7 @@ class HomeScreen extends StatelessWidget {
                               SizedBox(width: 7,),
                               dashboardCard(
                                   "Low Stock",
-                                  "3",
+                                  '${UserData.lowStock}',
                                   Icons.warning_rounded,
                                   Colors.white,
                                   Colors.red[600]!,

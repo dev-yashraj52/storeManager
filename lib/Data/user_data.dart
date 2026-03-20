@@ -1,6 +1,11 @@
 import 'package:storemanager/Models/model.dart';
 
 class UserData {
+  static int totalSales = 8564;
+  static int totalOrders = 67;
+  static int totalProducts = 156;
+  static int lowStock = 5;
+
   static List<Sale> sales = [
     Sale(id: '#1024', time: '04:15 PM Today', amount: 550),
     Sale(id: '#1023', time: '03:10 PM Today', amount: 480),
