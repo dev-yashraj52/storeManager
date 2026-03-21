@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:storemanager/Widgets/widgets.dart';
-// import 'package:storemanager/Data/user_data.dart';
+import 'package:storemanager/Data/user_data.dart';
+
+final invoices = Invoice.dummyInvoices;
 
 class SalesScreen extends StatelessWidget {
   const SalesScreen({super.key});
@@ -14,7 +16,11 @@ class SalesScreen extends StatelessWidget {
 
           children: [
             searchWidget('Search Recent Sales...'),
-
+            Column(
+            children: invoices.map((invoice){
+              return invoiceSmallCard(invoice.id, invoice.customerName, invoice.dateTime, invoice.totalAmount, invoice.status, invoice.items);
+              }).toList()
+            ),
           ],
         ),
 

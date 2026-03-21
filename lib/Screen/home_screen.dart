@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:storemanager/Widgets/widgets.dart';
 import 'package:storemanager/Data/user_data.dart';
 
-final sales = UserData.sales;
-
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 

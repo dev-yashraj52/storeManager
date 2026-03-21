@@ -53,8 +53,9 @@ class Invoice {
         InvoiceItem(name: 'Kurkure Packet', price: 10),
         InvoiceItem(name: 'Nutrela Soya', price: 10),
         InvoiceItem(name: 'Amul Peanut Butter 450gm', price: 154),
-        InvoiceItem(name: 'Mariegold Biscuit 40gm', price: 10),
-        // you can add more items here
+        InvoiceItem(name: 'Mariegold Biscuit 40gm', price: 30),
+        InvoiceItem(name: 'Mariegold Biscuit 40gm', price: 40),
+        InvoiceItem(name: 'Mariegold Biscuit 40gm', price: 50),
       ],
     ),
   ];
