@@ -203,9 +203,9 @@ class HomeScreen extends StatelessWidget {
                               Card(
                                 color: Colors.white,
                                 child: Column(
-                                  children: UserData.sales.map((sale){
+                                  children: [...UserData.sales.map((sale){
                                     return salesInventoryListTiles(Icons.receipt, sale.id, sale.time, '₹${sale.amount}');
-                                  }).toList()
+                                  })]
                                 ),
                               )
 

@@ -18,11 +18,15 @@ class SalesScreen extends StatelessWidget {
             searchWidget('Search Recent Sales...'),
             Expanded(child: SingleChildScrollView(
               child: Column(
-                  children: invoices.map((invoice){
+                  children: [...invoices.map((invoice){
                     return invoiceSmallCard(invoice.id, invoice.customerName, invoice.dateTime, invoice.totalAmount, invoice.status, invoice.items);
-                  }).toList()
+                  }),
+                    SizedBox(height: 80,)
+                  ]
+
               ),
-            ),)
+            ),
+            ),
           ],
         ),
 
