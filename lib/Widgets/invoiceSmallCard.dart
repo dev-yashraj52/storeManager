@@ -5,26 +5,38 @@ Widget invoiceSmallCard(final String id, final String customerName, final DateTi
     final double totalAmount, final String status, final List<InvoiceItem> items){
   return Card(
     child: Padding(
-      padding: const EdgeInsets.all(12),
+      padding: const EdgeInsets.fromLTRB(20,15,20,10),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(id),
-              Text(status),
+              Text('Invoice #$id'),
+              Container(
+                padding: EdgeInsets.fromLTRB(8,0,8,0),
+                  decoration: BoxDecoration(
+                    color: Colors.green[100],
+                    borderRadius: BorderRadius.circular(12)
+                  ),
+                  child: Text(status,style: TextStyle( color: Colors.green[900]),)),
             ],
           ),
+          SizedBox(height: 10,),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(customerName),
-              Text(dateTime.toString()),
+              Row(children: [Icon(Icons.person),SizedBox(width: 5,),Text(customerName),],),
+              Text(
+                '${dateTime.day}-${dateTime.month}-${dateTime.year} | '
+                    '${dateTime.hour}:${dateTime.minute.toString().padLeft(2, '0')}',
+      ),
             ],
           ),
 
-          Text('₹$totalAmount',),
+          SizedBox(height: 6,),
+          Text('₹$totalAmount',style: TextStyle(fontSize: 30, color: Colors.blue[700]),),
+          SizedBox(height: 6,),
 
           ...items.take(4).map((item) {
             return Row(
@@ -37,6 +49,11 @@ Widget invoiceSmallCard(final String id, final String customerName, final DateTi
           }),
           if (items.length > 4)
             Text('+ And ${items.length - 4} More'),
+
+          Divider(),
+          Center(
+            child: Text('View Bill Details', style: TextStyle(fontSize: 16,color: Colors.grey[600]),),
+          )
         ],
       ),
     ),
