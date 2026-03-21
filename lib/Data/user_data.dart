@@ -58,5 +58,26 @@ class Invoice {
         InvoiceItem(name: 'Mariegold Biscuit 40gm', price: 50),
       ],
     ),
+    Invoice(
+      id: 'INV-2026-2103-1255',
+      customerName: 'Counter Sale',
+      dateTime: DateTime(2025, 9, 13, 12, 55),
+      totalAmount: 574.00,
+      status: 'PAID',
+      items: [
+        InvoiceItem(name: 'Kurkure Packet', price: 10),
+        InvoiceItem(name: 'Nutrela Soya', price: 10),
+      ],
+    ),
+    Invoice(
+      id: 'INV-2026-2103-1255',
+      customerName: 'Counter Sale',
+      dateTime: DateTime(2025, 9, 13, 12, 55),
+      totalAmount: 574.00,
+      status: 'PAID',
+      items: [
+        InvoiceItem(name: 'Kurkure Packet', price: 10),
+      ],
+    ),
   ];
 }
