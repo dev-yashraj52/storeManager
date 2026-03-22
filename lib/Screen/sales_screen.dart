@@ -15,7 +15,18 @@ class SalesScreen extends StatelessWidget {
         child:  Column(
 
           children: [
-            searchWidget('Search Recent Sales...'),
+            Row(
+              spacing: 10,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [Expanded(child: searchWidget('Search Recent Sales...')),
+                Container(
+                    padding: EdgeInsets.fromLTRB(2,2,2,2),
+                    decoration: BoxDecoration(
+                        color: Colors.grey[300],
+                        borderRadius: BorderRadius.circular(12)
+                    ),
+                    child: IconButton(onPressed: (){}, icon: Icon(Icons.tune),))],
+            ),
             Expanded(child: SingleChildScrollView(
               child: Column(
                   children: [...invoices.map((invoice){
