@@ -39,8 +39,8 @@ class SalesScreen extends StatelessWidget {
                             Column(
                               mainAxisSize: MainAxisSize.min,
                               children: [
-                                ListTile(title: Text("Edit")),
-                                ListTile(title: Text("Delete")),
+                                ListTile(title: Text("Filters Options")),
+                                ListTile(title: Text("Work in Progress")),
                               ],
                             ),
                           );
