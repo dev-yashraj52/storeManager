@@ -22,8 +22,15 @@ class SalesScreen extends StatelessWidget {
                 Container(
                     padding: EdgeInsets.fromLTRB(2,2,2,2),
                     decoration: BoxDecoration(
-                        color: Colors.grey[300],
-                        borderRadius: BorderRadius.circular(12)
+                      color: Colors.white, // important for shadow
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Color.fromRGBO(0, 0, 0, 0.1),
+                          blurRadius: 8,
+                          offset: Offset(0, 4),
+                        ),
+                      ],
                     ),
                     child: IconButton(onPressed: (){}, icon: Icon(Icons.tune),))],
             ),
