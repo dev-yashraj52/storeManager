@@ -79,5 +79,19 @@ class Invoice {
         InvoiceItem(name: 'Kurkure Packet', price: 10),
       ],
     ),
+    Invoice(
+      id: 'INV-2026-2103-1255',
+      customerName: 'Counter Sale',
+      dateTime: DateTime(2025, 9, 13, 12, 55),
+      totalAmount: 65.00,
+      status: 'PAID',
+      items: [
+        InvoiceItem(name: 'Kurkure Packet', price: 10),
+        InvoiceItem(name: 'Amul Tricone Bsc Bliss 120ml', price: 35),
+        InvoiceItem(name: 'Cadbury Dairy Milk', price: 20),
+        InvoiceItem(name: 'Cadbury Dairy Milk', price: 20),
+        InvoiceItem(name: 'Cadbury Dairy Milk', price: 20),
+      ],
+    ),
   ];
 }
