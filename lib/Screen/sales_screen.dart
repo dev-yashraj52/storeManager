@@ -33,7 +33,18 @@ class SalesScreen extends StatelessWidget {
                           ),
                         ],
                       ),
-                      child: IconButton(onPressed: (){}, icon: Icon(Icons.tune),)),
+                      child: IconButton(
+                        onPressed: () {
+                          bottomPopup(context,
+                            Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                ListTile(title: Text("Edit")),
+                                ListTile(title: Text("Delete")),
+                              ],
+                            ),
+                          );
+                          }, icon: Icon(Icons.tune),)),
                 ),
               ],
             ),
