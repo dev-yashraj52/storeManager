@@ -11,9 +11,8 @@ class SalesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Container(
-        padding: EdgeInsets.only(top: 12, left: 12, right: 12),
+        padding: EdgeInsets.only(top: 12, left: 12, right: 12, ),
         child:  Column(
-
           children: [
             Row(
               spacing: 10,
@@ -35,14 +34,16 @@ class SalesScreen extends StatelessWidget {
                         ],
                       ),
                       child: IconButton(onPressed: (){}, icon: Icon(Icons.tune),)),
-                )],
+                ),
+              ],
             ),
+            SizedBox(height: 5,),
             Expanded(child: SingleChildScrollView(
               child: Column(
-                  children: [SizedBox(height: 5,),...invoices.map((invoice){
+                  children: [...invoices.map((invoice){
                     return invoiceSmallCard(invoice.id, invoice.customerName, invoice.dateTime, invoice.totalAmount, invoice.status, invoice.items);
                   }),
-                    SizedBox(height: 80,)
+                    SizedBox(height: 20,)
                   ]
 
               ),
