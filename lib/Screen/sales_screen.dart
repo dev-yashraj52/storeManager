@@ -39,7 +39,7 @@ class SalesScreen extends StatelessWidget {
             ),
             Expanded(child: SingleChildScrollView(
               child: Column(
-                  children: [...invoices.map((invoice){
+                  children: [SizedBox(height: 5,),...invoices.map((invoice){
                     return invoiceSmallCard(invoice.id, invoice.customerName, invoice.dateTime, invoice.totalAmount, invoice.status, invoice.items);
                   }),
                     SizedBox(height: 80,)
