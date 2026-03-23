@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:storemanager/Screen/inventory/inventory/inventory_detail_screen.dart';
+import 'package:storemanager/Screen/inventory/purchase/create_purchase_screen.dart';
 import 'package:storemanager/Screen/inventory/inventory/inventory_screen.dart';
 import 'package:storemanager/Screen/sale/create_sale_screen.dart';
 import 'package:storemanager/Screen/setting/setting_screen.dart';
@@ -39,7 +39,7 @@ class _HomeState extends State<Home> {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => InventoryDetailScreen(),
+              builder: (context) => CreatePurchaseScreen(),
             ),
           );
         },
