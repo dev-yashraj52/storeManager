@@ -65,4 +65,7 @@ GitHub: https://github.com/dev-yashraj52
 
 ## App Screenshots
 
-![img.png](img.png)
+<p align="center">
+  <img src="screenshots/img.png" width="250"/>
+  <img src="screenshots/img_1.png" width="250"/>
+</p>
