@@ -4,8 +4,8 @@ import 'package:storemanager/Data/user_data.dart';
 
 final invoices = Invoice.dummyInvoices;
 
-class SalesScreen extends StatelessWidget {
-  const SalesScreen({super.key});
+class SaleScreen extends StatelessWidget {
+  const SaleScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

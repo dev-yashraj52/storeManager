@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'Screen/home_screen.dart';
-import 'Screen/sales_screen.dart';
+import 'Screen/home/home_screen.dart';
+import 'Screen/sale/sale_screen.dart';
 
 void main() => runApp(MaterialApp(
   home: Home()
@@ -20,7 +20,7 @@ class _HomeState extends State<Home> {
   final pages = [
     HomeScreen(),
     Center(child: Text('Inventory Screen')),
-    SalesScreen(),
+    SaleScreen(),
     Center(child: Text('Settings Screen')),
   ];
 
