@@ -5,18 +5,18 @@ class InventoryScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Container(
-        padding: EdgeInsets.only(top: 12, left: 12, right: 12, ),
-        child:  Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Center(child: Text('Inventory Screen'))
-          ],
+    return Scaffold(
+      appBar: AppBar(title: Text("Inventory")),
+      body: SafeArea(
+        child: Container(
+          padding: EdgeInsets.all(12),
+          child: Column(
+            children: [
+              Text('Inventory Screen'),
+            ],
+          ),
         ),
-
       ),
-
     );
   }
 }

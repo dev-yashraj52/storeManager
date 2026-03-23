@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 
-class SettingScreen extends StatelessWidget {
-  const SettingScreen({super.key});
+class InventoryDetailScreen extends StatelessWidget {
+  const InventoryDetailScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Container(
-        padding: EdgeInsets.only(top: 12, left: 12, right: 12, ),
-        child:  Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Center(child: Text('Inventory Item Details Screen'))
-          ],
+    return Scaffold(
+      appBar: AppBar(title: Text("Inventory Detail")),
+      body: SafeArea(
+        child: Container(
+          padding: EdgeInsets.all(12),
+          child: Column(
+            children: [
+              Text('Inventory Detail Screen'),
+            ],
+          ),
         ),
-
       ),
-
     );
   }
 }

@@ -34,7 +34,14 @@ class _HomeState extends State<Home> {
         backgroundColor: Colors.green[600],
         foregroundColor: Colors.white,
         child: Icon(Icons.add_business),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => InventoryScreen(),
+            ),
+          );
+        },
       );
     }
     else if (currentPage == 2) {
