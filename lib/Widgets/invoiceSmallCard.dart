@@ -1,13 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:storemanager/Data/user_data.dart';
+import 'package:storemanager/Screen/sale/sale_detail_screen.dart';
 
-Widget invoiceSmallCard(final String id, final String customerName, final DateTime dateTime,
+Widget invoiceSmallCard(BuildContext context, final String id, final String customerName, final DateTime dateTime,
     final double totalAmount, final String status, final List<InvoiceItem> items){
   return Container(
     margin: EdgeInsets.fromLTRB(0, 6, 0, 0),
     child: Card(
       child: InkWell(
-        onTap: (){print('CLiked');},
+        onTap: (){
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => SaleDetailScreen(),
+            ),
+          );
+        },
         borderRadius: BorderRadius.circular(12),
         child: Padding(
           padding: const EdgeInsets.fromLTRB(20,15,20,10),

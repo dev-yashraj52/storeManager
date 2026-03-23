@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:storemanager/Screen/inventory/inventory/inventory_screen.dart';
+import 'package:storemanager/Screen/sale/create_sale_screen.dart';
 import 'package:storemanager/Screen/setting/setting_screen.dart';
 import 'Screen/home/home_screen.dart';
 import 'Screen/sale/sale_screen.dart';
@@ -28,6 +29,7 @@ class _HomeState extends State<Home> {
 
   Widget? buildFAB() {
     if (currentPage == 1) {
+      //FAB for Inventory Screen
       return FloatingActionButton(
         backgroundColor: Colors.green[600],
         foregroundColor: Colors.white,
@@ -36,11 +38,19 @@ class _HomeState extends State<Home> {
       );
     }
     else if (currentPage == 2) {
+      //FAB for Sales Screen
       return FloatingActionButton(
         backgroundColor: Colors.blue[700],
         foregroundColor: Colors.white,
         child: Icon(Icons.sell),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => CreateSaleScreen(),
+            ),
+          );
+        },
       );
     }
 

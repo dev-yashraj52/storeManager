@@ -17,7 +17,8 @@ class SaleScreen extends StatelessWidget {
             Row(
               spacing: 10,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [Expanded(child: SizedBox(height: 52, child: searchWidget('Search Recent Sales...'),)),
+              children: [
+                Expanded(child: SizedBox(height: 52, child: searchWidget('Search Recent Sales...'),)),
                 SizedBox(
                   height: 52,
                   child: Container(
@@ -52,7 +53,7 @@ class SaleScreen extends StatelessWidget {
             Expanded(child: SingleChildScrollView(
               child: Column(
                   children: [...invoices.map((invoice){
-                    return invoiceSmallCard(invoice.id, invoice.customerName, invoice.dateTime, invoice.totalAmount, invoice.status, invoice.items);
+                    return invoiceSmallCard(context, invoice.id, invoice.customerName, invoice.dateTime, invoice.totalAmount, invoice.status, invoice.items);
                   }),
                     SizedBox(height: 20,)
                   ]
