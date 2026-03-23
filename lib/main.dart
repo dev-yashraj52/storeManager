@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:storemanager/Screen/inventory/inventory/inventory_screen.dart';
+import 'package:storemanager/Screen/setting/setting_screen.dart';
 import 'Screen/home/home_screen.dart';
 import 'Screen/sale/sale_screen.dart';
 
@@ -17,11 +19,11 @@ class _HomeState extends State<Home> {
   //currentPage default value render that Page on Screen
   int currentPage = 0;
 
-  final pages = [
+  List<Widget> pages = [
     HomeScreen(),
-    Center(child: Text('Inventory Screen')),
+    InventoryScreen(),
     SaleScreen(),
-    Center(child: Text('Settings Screen')),
+    SettingScreen(),
   ];
 
   Widget? buildFAB() {
