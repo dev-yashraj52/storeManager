@@ -63,7 +63,7 @@ GitHub: https://github.com/dev-yashraj52
 
 
 
-## App Screenshots
+## 📱 App Screenshots
 
 <p align="center">
   <img src="screenshots/img.png" width="250"/>
