@@ -25,7 +25,7 @@ class InvoiceItem {
   });
 }
 
-class Invoice {
+class SaleInvoice {
   final String id;
   final String customerName;
   final DateTime dateTime;
@@ -33,7 +33,7 @@ class Invoice {
   final String status;
   final List<InvoiceItem> items;
 
-  Invoice({
+  SaleInvoice({
     required this.id,
     required this.customerName,
     required this.dateTime,
@@ -42,8 +42,8 @@ class Invoice {
     required this.items,
   });
 
-  static List<Invoice> dummyInvoices = [
-    Invoice(
+  static List<SaleInvoice> dummyInvoices = [
+    SaleInvoice(
       id: 'INV-2026-2103-1255',
       customerName: 'Counter Sale',
       dateTime: DateTime(2025, 9, 13, 12, 55),
@@ -58,7 +58,7 @@ class Invoice {
         InvoiceItem(name: 'Mariegold Biscuit 40gm', price: 50),
       ],
     ),
-    Invoice(
+    SaleInvoice(
       id: 'INV-2026-2103-1255',
       customerName: 'Counter Sale',
       dateTime: DateTime(2025, 9, 13, 12, 55),
@@ -69,7 +69,7 @@ class Invoice {
         InvoiceItem(name: 'Nutrela Soya', price: 10),
       ],
     ),
-    Invoice(
+    SaleInvoice(
       id: 'INV-2026-2103-1255',
       customerName: 'Counter Sale',
       dateTime: DateTime(2025, 9, 13, 12, 55),
@@ -79,7 +79,7 @@ class Invoice {
         InvoiceItem(name: 'Kurkure Packet', price: 10),
       ],
     ),
-    Invoice(
+    SaleInvoice(
       id: 'INV-2026-2103-1255',
       customerName: 'Counter Sale',
       dateTime: DateTime(2025, 9, 13, 12, 55),
