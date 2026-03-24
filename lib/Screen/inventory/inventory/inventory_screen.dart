@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:storemanager/Widgets/widgets.dart';
 import 'package:storemanager/Data/user_data.dart';
 
-final invoices = Invoice.dummyInvoices;
+final products = Product.dummyProducts;
 
 class InventoryScreen extends StatelessWidget {
   const InventoryScreen({super.key});
@@ -52,8 +52,8 @@ class InventoryScreen extends StatelessWidget {
             SizedBox(height: 5,),
             Expanded(child: SingleChildScrollView(
               child: Column(
-                  children: [...invoices.map((invoice){
-                    return stockItemCard(context, invoice.id, invoice.customerName, invoice.dateTime, invoice.totalAmount, invoice.status, invoice.items);
+                  children: [...products.map((product){
+                    return stockItemCard(context, product.productImage, product.productSku, product.productName, product.productQtyLeft, product.productExpiryDateTime, product.productStockedDateTime, product.productLowStockSize );
                   }),
                     SizedBox(height: 20,)
                   ]

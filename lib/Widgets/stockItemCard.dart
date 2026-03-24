@@ -4,12 +4,13 @@ import 'package:storemanager/Screen/inventory/inventory/inventory_detail_screen.
 
 Widget stockItemCard(
     BuildContext context,
-    final String id,
-    final String name,
-    final DateTime dateTime,
-    final double totalAmount,
-    final String status,
-    final List<InvoiceItem> items,
+    final String productImage,
+    final String productSku,
+    final String productName,
+    final int productQtyLeft,
+    final DateTime productExpiryDateTime,
+    final DateTime productStockedDateTime,
+    final int productLowStockSize,
     ) {
   return Container(
     margin: const EdgeInsets.only(top: 6),
@@ -32,11 +33,11 @@ Widget stockItemCard(
           padding: const EdgeInsets.all(12),
           child: Row(
             children: [
-              /// 🔹 Image
+              // Image
               ClipRRect(
                 borderRadius: BorderRadius.circular(8),
                 child: Image.network(
-                  'https://lh4.googleusercontent.com/proxy/Aj9usBgtwZlI-0Fj4T6Q4d30xhJN_0jrQ7IG2DOxapBWh2HB5l80XQDiX0IabASuL1Z_4qZ8_R23XnuEhOBU-NN1cmjM-P8jIc88g7PBRejlUeo03Br6lSwzOII',
+                  productImage,
                   height: 75,
                   width: 75,
                   fit: BoxFit.cover,
@@ -45,30 +46,35 @@ Widget stockItemCard(
 
               const SizedBox(width: 12),
 
-              /// 🔹 Middle (name + dates)
+             // Middle (name + dates)
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Product Name here, long name too',
+                      productName,
                       style: TextStyle(
                         fontSize: 18,
-                        fontWeight: FontWeight.w600,
+                        fontWeight: FontWeight.w500,
                         color: Colors.blue[700],
                       ),
                       overflow: TextOverflow.ellipsis,
                     ),
 
-                    const SizedBox(height: 4),
+                    Text(
+                      productSku,
+                      style: TextStyle(fontSize: 14, color: Colors.grey[600]),
+                    ),
+
+                    const SizedBox(height: 6),
 
                     Text(
-                      "Exp: ${dateTime.day}-${dateTime.month}-${dateTime.year}",
-                      style: const TextStyle(fontSize: 14),
+                      "Exp: ${productExpiryDateTime.day}-${productExpiryDateTime.month}-${productExpiryDateTime.year}",
+                      style: TextStyle(fontSize: 14),
                     ),
 
                     Text(
-                      "Stocked: ${dateTime.day}-${dateTime.month}-${dateTime.year}",
+                      "Stocked: ${productStockedDateTime.day}-${productStockedDateTime.month}-${productStockedDateTime.year}",
                       style: TextStyle(
                         fontSize: 14,
                         color: Colors.grey[600],
@@ -78,7 +84,7 @@ Widget stockItemCard(
                 ),
               ),
 
-              /// 🔹 Right (status + qty)
+              // Right (status + qty)
               Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
@@ -92,9 +98,9 @@ Widget stockItemCard(
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Text(
-                      status,
+                      productQtyLeft < productLowStockSize ? 'Low Stock' : 'In Stock',
                       style: TextStyle(
-                        color: Colors.green[900],
+                        color: productQtyLeft < productLowStockSize ? Colors.red[900]:Colors.green[900],
                         fontSize: 12,
                       ),
                     ),
@@ -109,7 +115,7 @@ Widget stockItemCard(
                           text: "400",
                           style: TextStyle(
                             fontSize: 18,
-                            fontWeight: FontWeight.bold,
+                            fontWeight: FontWeight.w400,
                             color: Colors.black,
                           ),
                         ),
