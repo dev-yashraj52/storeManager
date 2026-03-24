@@ -129,7 +129,7 @@ class Product {
       productImage: 'https://lh4.googleusercontent.com/proxy/Aj9usBgtwZlI-0Fj4T6Q4d30xhJN_0jrQ7IG2DOxapBWh2HB5l80XQDiX0IabASuL1Z_4qZ8_R23XnuEhOBU-NN1cmjM-P8jIc88g7PBRejlUeo03Br6lSwzOII',
       productSku: 'IC-AMUL-BSC-30',
       productName: 'Amul Bsc Bliss 120ml',
-      productQtyLeft: 60,
+      productQtyLeft: 2,
       productExpiryDateTime: DateTime(2025, 9, 13, 12, 55),
       productStockedDateTime: DateTime(2025, 9, 13, 12, 55),
       productLowStockSize: 5,

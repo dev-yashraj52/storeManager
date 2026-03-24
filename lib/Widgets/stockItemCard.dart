@@ -93,11 +93,11 @@ Widget stockItemCard(
                       vertical: 2,
                     ),
                     decoration: BoxDecoration(
-                      color: Colors.green[100],
+                      color: productQtyLeft < productLowStockSize ? Colors.red[100]: Colors.green[100],
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Text(
-                      productQtyLeft < productLowStockSize ? 'Low Stock' : 'In Stock',
+                      productQtyLeft < productLowStockSize ? 'Low' : 'In Stock',
                       style: TextStyle(
                         color: productQtyLeft < productLowStockSize ? Colors.red[900]:Colors.green[900],
                         fontSize: 12,
@@ -110,7 +110,7 @@ Widget stockItemCard(
                     text: TextSpan(
                       children: [
                         TextSpan(
-                          text: "400",
+                          text: productQtyLeft.toString(),
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.w400,
