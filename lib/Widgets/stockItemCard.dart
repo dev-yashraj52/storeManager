@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:storemanager/Data/user_data.dart';
 import 'package:storemanager/Screen/inventory/inventory/inventory_detail_screen.dart';
 
 Widget stockItemCard(
