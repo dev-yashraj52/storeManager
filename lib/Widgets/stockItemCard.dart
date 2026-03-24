@@ -104,8 +104,7 @@ Widget stockItemCard(
                       ),
                     ),
                   ),
-
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 40),
 
                   RichText(
                     text: TextSpan(
