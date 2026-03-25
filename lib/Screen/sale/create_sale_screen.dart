@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:storemanager/Widgets/appFormField.dart';
 
 class CreateSaleScreen extends StatelessWidget {
   const CreateSaleScreen({super.key});
@@ -11,8 +12,12 @@ class CreateSaleScreen extends StatelessWidget {
         child: Container(
           padding: EdgeInsets.all(12),
           child: Column(
+            spacing: 10,
             children: [
               Text('Create Sales Screen'),
+              appFormField('Enter Product'),
+              appFormField('Enter Quantity'),
+              appFormField('Enter Price'),
             ],
           ),
         ),

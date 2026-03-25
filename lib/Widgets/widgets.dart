@@ -5,3 +5,4 @@ export 'package:storemanager/Widgets/searchWidget.dart';
 export 'package:storemanager/Widgets/invoiceSmallCard.dart';
 export 'package:storemanager/Widgets/bottomPopup.dart';
 export 'package:storemanager/Widgets/stockItemCard.dart';
+export 'package:storemanager/Widgets/appFormField.dart';
