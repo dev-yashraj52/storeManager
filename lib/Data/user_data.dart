@@ -117,7 +117,7 @@ class Product {
 
   static List<Product> dummyProducts = [
     Product(
-      productImage: '#',
+      productImage: 'assets/images/product_images/product1.webp',
       productSku: 'IC-AMUL-BSC-30',
       productName: 'Amul Bsc Bliss 120ml',
       productQtyLeft: 60,
@@ -126,7 +126,7 @@ class Product {
       productLowStockSize: 5,
     ),
     Product(
-      productImage: '#',
+      productImage: 'assets/images/product_images/product2.webp',
       productSku: 'IC-AMUL-BSC-30',
       productName: 'Amul Bsc Bliss 120ml',
       productQtyLeft: 2,
@@ -135,7 +135,7 @@ class Product {
       productLowStockSize: 5,
     ),
     Product(
-      productImage: '#',
+      productImage: 'assets/images/product_images/product1.webp',
       productSku: 'KUR-SIZZ-10',
       productName: 'Kurkure Sizzling Hot 45gm',
       productQtyLeft: 60,
@@ -144,7 +144,7 @@ class Product {
       productLowStockSize: 5,
     ),
     Product(
-      productImage: '#',
+      productImage: 'assets/images/product_images/product2.webp',
       productSku: 'KUR-SIZZ-10',
       productName: 'Kurkure Sizzling Hot 45gm',
       productQtyLeft: 60,
@@ -153,7 +153,7 @@ class Product {
       productLowStockSize: 5,
     ),
     Product(
-      productImage: '#',
+      productImage: 'assets/images/product_images/product1.webp',
       productSku: 'KUR-SIZZ-10',
       productName: 'Kurkure Sizzling Hot 45gm',
       productQtyLeft: 60,
@@ -162,7 +162,7 @@ class Product {
       productLowStockSize: 5,
     ),
     Product(
-      productImage: '#',
+      productImage: 'assets/images/product_images/product2.webp',
       productSku: 'KUR-SIZZ-10',
       productName: 'Kurkure Sizzling Hot 45gm',
       productQtyLeft: 60,
@@ -171,7 +171,7 @@ class Product {
       productLowStockSize: 5,
     ),
     Product(
-      productImage: '#',
+      productImage: 'assets/images/product_images/product1.webp',
       productSku: 'KUR-SIZZ-10',
       productName: 'Kurkure Sizzling Hot 45gm',
       productQtyLeft: 60,
@@ -180,7 +180,7 @@ class Product {
       productLowStockSize: 5,
     ),
     Product(
-      productImage: '#',
+      productImage: 'assets/images/product_images/product2.webp',
       productSku: 'KUR-SIZZ-10',
       productName: 'Kurkure Sizzling Hot 45gm',
       productQtyLeft: 60,

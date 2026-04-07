@@ -35,7 +35,7 @@ Widget stockItemCard(
               // Image
               ClipRRect(
                 borderRadius: BorderRadius.circular(8),
-                child: Image.network(
+                child: Image.asset(
                   productImage,
                   height: 75,
                   width: 75,
