@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:storemanager/Widgets/appFormField.dart';
+import 'package:storemanager/Widgets/appFormSelectField.dart';
 
 class CreateSaleScreen extends StatelessWidget {
   const CreateSaleScreen({super.key});
@@ -11,14 +12,30 @@ class CreateSaleScreen extends StatelessWidget {
       body: SafeArea(
         child: Container(
           padding: EdgeInsets.all(12),
-          child: Column(
-            spacing: 10,
-            children: [
-              Text('Create Sales Screen'),
-              appFormField('Enter Product'),
-              appFormField('Enter Quantity'),
-              appFormField('Enter Price'),
-            ],
+          child: Form(
+            child: Column(
+              spacing: 15,
+              children: [
+                appFormField('Customer'),
+                appFormField('Phone Number'),
+                appFormSelectField(
+                    "Select Product",
+                    ["Maggie Masala", "Item B", "Item C"],
+                    null,
+                        (value) {},
+                        (value) => null
+                ),
+                ElevatedButton(
+                    onPressed: (){},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.blue[700],
+                      foregroundColor: Colors.white,
+                    ),
+                    child: Text('ADD',
+                    ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
