@@ -190,3 +190,46 @@ class Product {
     ),
   ];
 }
+
+
+
+class SaleProductDetail {
+  final String productName;
+  final double productMrp;
+  final double discountOnMrp;
+  final int productQuantityLeft;
+
+  SaleProductDetail({
+    required this.productName,
+    required this.productMrp,
+    required this.discountOnMrp,
+    required this.productQuantityLeft,
+  });
+
+  static List<SaleProductDetail> dummyInvoices = [
+    SaleProductDetail(
+      productName: 'Maggie Masala 20gm',
+      productMrp: 10.00,
+      discountOnMrp: 0,
+      productQuantityLeft: 20,
+    ),
+    SaleProductDetail(
+      productName: 'Product B',
+      productMrp: 25.00,
+      discountOnMrp: 0,
+      productQuantityLeft: 5,
+    ),
+    SaleProductDetail(
+      productName: 'Product C',
+      productMrp: 30.00,
+      discountOnMrp: 0,
+      productQuantityLeft: 15,
+    ),
+    SaleProductDetail(
+      productName: 'Product D',
+      productMrp: 15.00,
+      discountOnMrp: 0,
+      productQuantityLeft: 2,
+    ),
+  ];
+}
